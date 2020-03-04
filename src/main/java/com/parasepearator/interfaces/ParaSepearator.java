@@ -113,10 +113,11 @@ public class ParaSepearator {
 		
 		
 		ArrayList<String> Kerla = new ArrayList<String>();
-		Kerla.add("^\\d\\.\\s+");
+		Kerla.add("^\\d+\\.\\s+|^\\s+\\d+\\.\\s+");
 		Kerla.add("^\\s+[“\"]\\w+[\\.\\s+]");
-		Kerla.add("^\\w+\\)\\s+");
-		Kerla.add("^\\w+\\)\\s+");
+		Kerla.add("^\\w+\\)[A-Za-z]+\\s+");
+		Kerla.add("^\\(\\w+\\)\\s+");
+	
 		
 		
 		Map<String, ArrayList<String>> table = new Hashtable();
